@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yuSGeS8QyLxbhTbsVtHkcomzg3V2qmstkrY9Bm08oWQ=",
+  "Source": "DemoJenkinCICD",
+  "BasePath": "_content/DemoJenkinCICD",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

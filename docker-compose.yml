@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+   
+  portainer:
+    image: portainer/portainer-ce
+
+  product.api:
+    image: ${DOCKER_REGISTRY-}product-api:${PLATFORM:-linux}-${TAG:-latest}
+    build:
+      context: .
+      dockerfile: DemoJenkinCICD/Dockerfile
+    
+   
+#network section
+networks:
+  default:
+    name: tedu_microservices
+    driver: bridge
+
+#volumes section
+volumes:
+  portainer_data:
+    name: portainer_data
+   
